@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('./deploycommands.js');
 
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
 const mongoose = require('mongoose');
