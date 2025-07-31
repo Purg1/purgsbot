@@ -3,7 +3,6 @@ require('./server.js');
 
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
 const mongoose = require('mongoose');
-const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
