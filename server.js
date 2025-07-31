@@ -1,8 +1,12 @@
-const http = require('http');
+// server.js
+const express = require('express');
+const app = express();
 const PORT = process.env.PORT || 3000;
-const server = http.createServer((req, res) => {
-  res.writeHead(200);
-  res.end('OK');
+
+app.get('/', (req, res) => {
+  res.send('Bot is online!');
 });
 
-server.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`✅ Web server running! Listening on port ${PORT}`);
+});
